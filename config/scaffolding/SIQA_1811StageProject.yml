@@ -11,38 +11,14 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
-  packages:
-  - name: SIQA_1811StageProject
-    version: "1.0"
-- serviceName: project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_2
-  packages:
-  - name: SIQA_1811StageProject
-    version: "1.0"
-- serviceName: project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_3
-  packages:
-  - name: SIQA_1811StageProject
-    version: "1.0"
-- serviceName: project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
-  packages:
-  - name: SIQA_1811StageProject
-    version: "1.0"
 - serviceName: project.siqa_1811stage.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_1811StageProject
     version: "1.0"
-- serviceName: project.siqa_1811stage.integrations:Sum
+- serviceName: project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TESTjdbc
   packages:
   - name: SIQA_1811StageProject
     version: "1.0"
-- serviceName: pub.math:addInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: pub.flow:debugLog
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
 configurationVariables:
   ? artConnection.SIQA_1811StageProject.project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
   : "1000"
