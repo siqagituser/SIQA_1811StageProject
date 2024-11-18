@@ -15,11 +15,6 @@ packages:
   gitUrl: https://github.webmethods.io/kvv
   gitUsername: kvv
   gitBranch: main
-- name: PackageA
-  gitServerName: SIQAPsurGit
-  gitUrl: https://github.com/prabhakarsag
-  gitUsername: prabhakarsag
-  gitBranch: main
 - name: PackageB
   gitServerName: SIQAPsurGit
   gitUrl: https://github.com/prabhakarsag
@@ -49,10 +44,10 @@ configurationVariables:
   : LOCAL_TRANSACTION
   ? artConnection.SIQA_1811StageProject.project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
   : "10"
-  ? artConnection.SIQA_1811StageProject.project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}B2Xqma4Ost5nVUiXctJydQ=="
   ? artConnection.SIQA_1811StageProject.project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
   : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQA_1811StageProject.project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}B2Xqma4Ost5nVUiXctJydQ=="
   ? artConnection.SIQA_1811StageProject.project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.SIQA_1811StageProject.project.siqa_1811stage.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.keyStore
